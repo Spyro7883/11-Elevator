@@ -14,11 +14,10 @@ Click on F12 to get on Developer Tools. You will get something like this:
 
 <img src="./images/image1.png">
 
-Go on Remix: https://remix.ethereum.org/ and make this change in Elevator.sol. 
-
 Copy the Elevator.sol contract found before "submit instance" and "get new instance" buttons.
 
-At Elevator.sol i made this next changes:
+Go on Remix: https://remix.ethereum.org/ and make this change in Elevator.sol:
+
 >- <value> 1. Pragma version from **0.6.0** to **0.8.0**
 
 This level asks us to get at the top of the building. The function isLastFloor() from the interface Building isn't implemented in the Elevator and we can use that as a way to get at the top of the building by creating a new contract called FixElevator, who's gonna use isLastFloor() function inside the Elevator contract.
